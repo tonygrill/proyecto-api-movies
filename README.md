@@ -39,7 +39,10 @@ Esta es una API para la gestión de películas desarrollada con FastAPI. Permite
 
 4. Ejecuta la aplicación
    ```bash
-   uvicorn main:app --reload
+   uvicorn main:app --reload --port 5000
+
+5. Abre tu navegador y escribe
+http://localhost:5000/docs
 
 
 ## Uso
