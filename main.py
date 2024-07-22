@@ -20,27 +20,9 @@ app.include_router(user_router)
 
 Base.metadata.create_all(bind=engine)
 
-movies = [
-    {
-        "id": 1,
-        "title": 'Avatar',
-        "overview": 'una descripción',
-        "year": 2009,
-        "rating": 8,
-        "category": "Accion"
-    },
-    {
-         "id": 2,
-        "title": 'Avatar',
-        "overview": 'una descripción',
-        "year": 2009,
-        "rating": 8,
-        "category": "ficcion"
-    }
-]
 
 @app.get('/', tags=['home'])
 def message():
-    return HTMLResponse('<h1>Hellow world</h1>')
+    return HTMLResponse('<h1>API MOVIES</h1>')
 
 
